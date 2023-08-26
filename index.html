@@ -1,65 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Titsdfhsle</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    <nav aria-label="Page navigation example" class="m">
-      <ul id="pagination" class="pagination"></ul>
-    </nav>
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <script>
-    const pagination = document.getElementById("pagination");
-
-    // Add previous button
-    const previousButton = document.createElement("li");
-    previousButton.classList.add("page-item");
-    pagination.appendChild(previousButton);
-    const previousLink = document.createElement("a");
-    previousLink.classList.add("page-link");
-    previousLink.href = "#";
-    previousLink.textContent = "Previous";
-    previousButton.appendChild(previousLink);
-
-    // Add numbered buttons
-    for (let i = 1; i <= 6; i++) {
-      const pageButton = document.createElement("li");
-      pageButton.classList.add("page-item");
-      pagination.appendChild(pageButton);
-      const pageLink = document.createElement("a");
-      pageLink.classList.add("page-link");
-      pageLink.href = `page${i}.html`;
-      pageLink.textContent = i;
-      pageButton.appendChild(pageLink);
-    }
-
-    // Add next button
-    const nextButton = document.createElement("li");
-    nextButton.classList.add("page-item");
-    pagination.appendChild(nextButton);
-    const nextLink = document.createElement("a");
-    nextLink.classList.add("page-link");
-    nextLink.href = "#";
-    nextLink.textContent = "Next";
-    nextButton.appendChild(nextLink);
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
